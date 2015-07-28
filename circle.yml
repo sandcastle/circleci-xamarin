@@ -1,3 +1,14 @@
 machine:
   xcode:
     version: "6.3.1"
+
+dependencies:
+  cache_directories:
+  override:
+    - sh ./script/ci-bootstrap
+
+test:
+  override:
+    - sh ./script/ci-build
+    - sh ./script/ci-test
+    - sh ./script/ci-package

@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# script/ci-bootstrap - make sure all required dependencies are setup
+
+# exit on sub-module failure
+set -e
+
+# move to parent dir
+cd "$(dirname "$0")/.."
+
+# ------
+
+echo "Bootstrapping.."
+date "+%H:%M:%S"
+echo ""
+
+echo "--------- "

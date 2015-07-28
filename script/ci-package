@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# script/ci-package - packages the build artefacts for publishing
+
+# exit on sub-module failure
+set -e
+
+# move to parent dir
+cd "$(dirname "$0")/.."
+
+# ------
+
+echo "Packaging.."
+date "+%H:%M:%S"
+echo ""
+
+echo "--------- "

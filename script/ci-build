@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# script/ci-build - builds the project
+
+# exit on sub-module failure
+set -e
+
+# move to parent dir
+cd "$(dirname "$0")/.."
+
+# ------
+
+echo "Building..."
+date "+%H:%M:%S"
+echo ""
+
+echo "--------- "

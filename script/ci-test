@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# script/ci-test - runs all automation tests
+
+# exit on sub-module failure
+set -e
+
+# move to parent dir
+cd "$(dirname "$0")/.."
+
+# ------
+
+echo "Testing.."
+date "+%H:%M:%S"
+echo ""
+
+echo "--------- "
