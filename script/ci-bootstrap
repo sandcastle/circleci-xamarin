@@ -15,3 +15,17 @@ date "+%H:%M:%S"
 echo ""
 
 echo "--------- "
+
+# install brew cask
+brew install caskroom/cask/brew-cask
+
+# install xamarin components
+brew cask install xamarin xamarin-jdk xamarin-ios xamarin-studio
+
+echo "--------- "
+
+echo "local apps"
+ls -la ~/Applications
+
+echo "root apps"
+ls -la /Applications
